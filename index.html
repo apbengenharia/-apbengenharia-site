@@ -3,130 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="APB Projetos e Serviços de Engenharia Ltda. Soluções integradas em engenharia, saneamento, HST, meio ambiente, projetos, fiscalização e coordenação técnica." />
+  <meta name="description" content="APB Projetos e Serviços de Engenharia Ltda. Soluções em engenharia, infraestrutura hidráulica, segurança de barragens, estruturas, instalações, meio ambiente, saúde e segurança do trabalho, coordenação técnica e planejamento." />
+  <meta name="theme-color" content="#073b78" />
   <title>APB Projetos e Serviços de Engenharia Ltda.</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="APB Engenharia - início">
-        <img src="./logo-apb.jpeg" alt="Logotipo da APB Projetos e Serviços de Engenharia Ltda." class="brand-logo" />
-        <div class="brand-copy">
-          <span class="brand-name">APB</span>
-          <span class="brand-legal">Projetos e Serviços de Engenharia Ltda.</span>
-        </div>
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img src="./logo-apb.jpeg" alt="Logotipo da APB" class="brand-logo" />
+        <span class="brand-legal">Projetos e Serviços<br>de Engenharia Ltda.</span>
       </a>
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a href="#empresa">Empresa</a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#sobre">Sobre a APB</a>
         <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
         <a href="#experiencia">Experiência</a>
         <a href="#contato">Contato</a>
       </nav>
+      <a class="header-cta" href="#contato" aria-label="Fale conosco">✉ <span>Fale Conosco</span></a>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <img src="./hero.jpg" alt="Infraestrutura hidráulica e reservatório" class="hero-bg" onerror="this.style.display='none'" />
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <img src="./hero.jpg" alt="Barragem e reservatório, infraestrutura hidráulica" class="hero-bg" />
       <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">África • Brasil</p>
-        <h1>Soluções de Engenharia para Infraestruturas que Transformam Realidades</h1>
-        <p class="hero-text">Planejamento, qualidade, segurança e compromisso técnico para o desenvolvimento de infraestruturas sustentáveis.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#servicos">Conheça nossos serviços</a>
-          <a class="btn btn-ghost" href="#contato">Fale com a APB</a>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow light">Engenharia que transforma</p>
+          <h1 id="hero-title">Soluções em Engenharia para um Futuro <span>Sustentável</span></h1>
+          <p>Projetos, consultoria, fiscalização, supervisão e coordenação técnica de obras com qualidade, segurança e compromisso com o desenvolvimento das pessoas e do meio ambiente.</p>
+          <a class="btn-primary" href="#sobre">Conheça a APB <span aria-hidden="true">→</span></a>
         </div>
+
+        <aside class="hero-values" aria-label="Princípios de atuação">
+          <div><span class="value-icon" aria-hidden="true">◉</span><strong>Infraestrutura<br>Hídrica</strong></div>
+          <div><span class="value-icon" aria-hidden="true">◒</span><strong>Sustentabilidade<br>Ambiental</strong></div>
+          <div><span class="value-icon" aria-hidden="true">◇</span><strong>Segurança e<br>Qualidade</strong></div>
+          <div><span class="value-icon" aria-hidden="true">●</span><strong>Desenvolvimento<br>com Responsabilidade</strong></div>
+        </aside>
       </div>
+      <div class="hero-tag">Planejamento Técnico<br>Construindo Soluções Reais</div>
     </section>
 
-    <section id="empresa" class="section section-light">
-      <div class="container grid-2">
+    <section id="sobre" class="section about-section">
+      <div class="container about-grid">
         <div>
-          <p class="eyebrow dark">Quem somos</p>
+          <p class="eyebrow">Sobre a APB</p>
           <h2>APB Projetos e Serviços de Engenharia Ltda.</h2>
-          <p>A APB atua na elaboração, revisão, coordenação técnica, fiscalização e acompanhamento de projetos e obras de engenharia, com experiência em África e no Brasil.</p>
-          <p>Nosso trabalho é orientado por rigor técnico, segurança, qualidade, sustentabilidade e responsabilidade socioambiental.</p>
+          <p>A APB desenvolve soluções de engenharia com atuação em África e no Brasil, apoiando empreendimentos desde os estudos e projetos até a fiscalização, supervisão, coordenação técnica e acompanhamento de obras.</p>
+          <p>As atividades são conduzidas com foco em qualidade, segurança, sustentabilidade, responsabilidade socioambiental e compatibilização entre as diferentes disciplinas de engenharia.</p>
         </div>
-        <div class="card emphasis">
-          <h3>Barragem e Reservatório</h3>
-          <p>Atuação em estudos, projetos, revisão técnica, coordenação e fiscalização de barragens, reservatórios, canais e infraestruturas associadas.</p>
+        <div class="about-panel">
+          <h3>Compromisso Técnico</h3>
+          <p>A APB conta com um <strong>corpo técnico especializado</strong> para a realização de suas atividades, buscando soluções adequadas às necessidades de cada projeto e às boas práticas de engenharia.</p>
         </div>
       </div>
     </section>
 
-    <section id="servicos" class="section section-blue">
+    <section id="servicos" class="section services-section" aria-labelledby="services-title">
       <div class="container">
-        <p class="eyebrow">Soluções integradas</p>
-        <h2>Portfólio de Serviços da <span class="apb-word">APB</span></h2>
-        <div class="service-grid">
-          <article class="service-card">
-            <h3>Água e Obras Hidráulicas</h3>
-            <p>Projetos de abastecimento de água, adutoras, redes de distribuição, ligações domiciliares, VRPs, válvulas, medidores e modelagem hidráulica.</p>
-          </article>
-          <article class="service-card">
-            <h3>Esgotamento e Drenagem</h3>
-            <p>Redes coletoras, elevatórias, ETEs, drenagem urbana, memoriais de cálculo, peças desenhadas e compatibilização de projetos.</p>
-          </article>
-          <article class="service-card">
-            <h3>Segurança do Trabalho / HST</h3>
-            <p>Gestão de riscos, inspeções, auditorias, PGR, PSS, PGAS, procedimentos seguros, capacitação e resposta a emergências.</p>
-          </article>
-          <article class="service-card">
-            <h3>Meio Ambiente e Gestão</h3>
-            <p>Estudos ambientais e sociais, gestão de resíduos e efluentes, monitoramento, mitigação e apoio documental.</p>
-          </article>
+        <div class="section-heading">
+          <h2 id="services-title">Nossos Serviços</h2>
+          <p>Soluções integradas em engenharia para diferentes fases do seu projeto.</p>
         </div>
 
-        <div class="complementary">
-          <h3>Atividades Complementares</h3>
-          <div class="mini-grid">
-            <div><strong>Coordenação Técnica de Obras</strong><span>Infraestruturas hidráulicas e barragens.</span></div>
-            <div><strong>Projetos em Estruturas</strong><span>Concreto, aço e obras especiais.</span></div>
-            <div><strong>Instalações Elétricas e Hidráulicas</strong><span>Projetos prediais e industriais.</span></div>
-            <div><strong>Orçamento e Planejamento</strong><span>Estimativas, medições, custos e planejamento de obras.</span></div>
-          </div>
+        <div class="services-grid">
+          <article class="service-card" id="seguranca-barragens" tabindex="0">
+            <div class="service-image service-dam" role="img" aria-label="Barragem e reservatório"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M11 49h42M18 49l4-31h20l4 31M25 24h14M24 32h16M23 40h18"/></svg>
+              <h3>Segurança de Barragens</h3>
+              <p>Inspeções, auditorias, planos de segurança, apoio técnico, avaliação documental e acompanhamento de estruturas hidráulicas.</p>
+              <button class="service-more" type="button" data-service="Segurança de Barragens" aria-label="Ver detalhes de Segurança de Barragens">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-structure" role="img" aria-label="Projeto estrutural"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M15 52V18h20v34M35 28h14v24M21 25h6M21 34h6M21 43h6M41 35h3M41 43h3"/></svg>
+              <h3>Projetos em Estruturas</h3>
+              <p>Concepção, dimensionamento, detalhamento, revisão e compatibilização de estruturas de concreto, aço e obras especiais.</p>
+              <button class="service-more" type="button" data-service="Projetos em Estruturas" aria-label="Ver detalhes de Projetos em Estruturas">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-installations" role="img" aria-label="Instalações hidráulicas e elétricas"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 42h12V30h12V18h12M22 42v9M46 18v9M10 51h16M38 27h16"/></svg>
+              <h3>Projetos em Instalações Elétricas e Hidráulicas</h3>
+              <p>Projetos prediais e industriais de sistemas elétricos, hidráulicos, captação, tratamento, reserva e distribuição de água.</p>
+              <button class="service-more" type="button" data-service="Projetos em Instalações Elétricas e Hidráulicas" aria-label="Ver detalhes de Projetos em Instalações Elétricas e Hidráulicas">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-coordination" role="img" aria-label="Coordenação técnica de obras"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 50h40M18 50v-9h28v9M22 41l3-18h14l3 18M26 29h10M32 17v6"/></svg>
+              <h3>Coordenação Técnica de Obras</h3>
+              <p>Supervisão, fiscalização, gestão de interfaces e apoio à execução de obras de infraestrutura hidráulica, barragens e edificações.</p>
+              <button class="service-more" type="button" data-service="Coordenação Técnica de Obras" aria-label="Ver detalhes de Coordenação Técnica de Obras">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-budget" role="img" aria-label="Orçamento e planejamento"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 51h40M16 45V31h8v14M28 45V22h8v23M40 45V14h8v31"/></svg>
+              <h3>Orçamento e Planejamento</h3>
+              <p>Estimativas de custos, quantitativos, medições, planejamento físico-financeiro, acompanhamento e controle de projetos e obras.</p>
+              <button class="service-more" type="button" data-service="Orçamento e Planejamento" aria-label="Ver detalhes de Orçamento e Planejamento">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-environment" role="img" aria-label="Meio ambiente"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M48 13C30 15 18 24 17 40c12 5 25-1 31-27ZM17 50c7-12 15-19 26-27"/></svg>
+              <h3>Meio Ambiente</h3>
+              <p>Estudos ambientais, planos de gestão, resíduos e efluentes, monitoramento, mitigação, licenciamento e acompanhamento socioambiental.</p>
+              <button class="service-more" type="button" data-service="Meio Ambiente" aria-label="Ver detalhes de Meio Ambiente">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-hst" role="img" aria-label="Saúde e Segurança do Trabalho"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M16 35c0-10 7-18 16-18s16 8 16 18M13 35h38v7H13zM23 17v10M41 17v10M20 49h24"/></svg>
+              <h3>Saúde e Segurança do Trabalho</h3>
+              <p>Elaboração e implementação de PSS, PGR, inspeções, auditorias, treinamentos, gestão de riscos, emergências e conformidade legal.</p>
+              <button class="service-more" type="button" data-service="Saúde e Segurança do Trabalho" aria-label="Ver detalhes de Saúde e Segurança do Trabalho">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-water" role="img" aria-label="Saneamento e infraestrutura hidráulica"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M13 38h10v10H13zM41 16h10v10H41zM23 43h12V21h6M35 30h12M18 38V24h17"/></svg>
+              <h3>Saneamento e Infraestruturas Hidráulicas</h3>
+              <p>Sistemas de abastecimento de água, adutoras, redes de distribuição, reservatórios, drenagem, esgotamento e infraestrutura associada.</p>
+              <button class="service-more" type="button" data-service="Saneamento e Infraestruturas Hidráulicas" aria-label="Ver detalhes de Saneamento e Infraestruturas Hidráulicas">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-infra" role="img" aria-label="Estudos e projetos de infraestrutura"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 53s14-13 14-25a14 14 0 1 0-28 0c0 12 14 25 14 25Zm0-18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/></svg>
+              <h3>Estudos e Projetos de Infraestrutura</h3>
+              <p>Estudos de campo, vias de acesso, drenagem, urbanização, topografia, compatibilização e projetos de obras complementares.</p>
+              <button class="service-more" type="button" data-service="Estudos e Projetos de Infraestrutura" aria-label="Ver detalhes de Estudos e Projetos de Infraestrutura">→</button>
+            </div>
+          </article>
+
+          <article class="service-card" tabindex="0">
+            <div class="service-image service-consulting" role="img" aria-label="Consultoria técnica"></div>
+            <div class="service-body">
+              <svg class="service-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M22 29a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM42 29a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM10 51c0-10 5-16 12-16s12 6 12 16M30 51c0-10 5-16 12-16s12 6 12 16"/></svg>
+              <h3>Consultoria Técnica</h3>
+              <p>Pareceres, análise técnica, due diligence, apoio contratual, revisão de documentos e soluções de engenharia sob medida.</p>
+              <button class="service-more" type="button" data-service="Consultoria Técnica" aria-label="Ver detalhes de Consultoria Técnica">→</button>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="experiencia" class="section section-light">
-      <div class="container">
-        <p class="eyebrow dark">Da concepção à realidade</p>
-        <h2>Experiência Técnica da <span class="apb-word">APB</span></h2>
-        <div class="experience-layout">
-          <img src="./experience.jpg" alt="Experiência técnica da APB em engenharia" class="feature-image" onerror="this.style.display='none'" />
-          <div class="experience-list">
-            <div><strong>Projetos e Fiscalização</strong><span>Desenvolvimento, revisão e acompanhamento técnico.</span></div>
-            <div><strong>Planejamento e Compatibilização</strong><span>Integração entre disciplinas e controle de interfaces.</span></div>
-            <div><strong>Topografia e Estudos de Campo</strong><span>Levantamentos e apoio à implantação de obras.</span></div>
-            <div><strong>Acompanhamento de Obras</strong><span>Controle técnico, qualidade, segurança e progresso.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-visual">
-      <div class="container visual-grid">
+    <section id="projetos" class="section project-strip">
+      <div class="container project-grid">
         <div>
-          <p class="eyebrow">Engenharia com propósito</p>
-          <h2>Do projeto à execução</h2>
-          <p>Soluções técnicas orientadas para desempenho, segurança, sustentabilidade e geração de valor.</p>
+          <p class="eyebrow light">Da concepção à realidade</p>
+          <h2>Projetos que geram valor</h2>
+          <p>Integração entre estudos, projeto, planejamento, fiscalização e acompanhamento para apoiar decisões técnicas e a execução segura das obras.</p>
         </div>
-        <img src="./services.jpg" alt="Serviços de engenharia da APB" class="feature-image" onerror="this.style.display='none'" />
+        <div class="project-points">
+          <span>Topografia e Estudos de Campo</span>
+          <span>Projetos e Fiscalização</span>
+          <span>Planejamento e Compatibilização</span>
+          <span>Acompanhamento de Obras</span>
+        </div>
       </div>
     </section>
 
-    <section id="contato" class="section section-contact">
+    <section id="experiencia" class="experience-section">
+      <div class="experience-text">
+        <div class="experience-inner">
+          <p class="eyebrow light">Experiência que gera resultados</p>
+          <h2>Experiência Técnica da APB</h2>
+          <p>Atuação em projetos e obras de infraestrutura hidráulica, saneamento, edificações, estruturas e sistemas eletromecânicos, com foco em qualidade, eficiência, segurança e sustentabilidade.</p>
+          <a class="btn-primary" href="#contato">Saiba mais <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="experience-photo" role="img" aria-label="Equipe técnica em acompanhamento de obra"></div>
+      <div class="experience-tag">Planejamento Técnico<br>Construindo Soluções Reais</div>
+    </section>
+
+    <section class="commitment-section">
+      <div class="container commitment-grid">
+        <div class="commitment-title">
+          <span class="leaf-icon" aria-hidden="true">◆</span>
+          <div><strong>Compromisso</strong><span>com um futuro sustentável</span></div>
+        </div>
+        <div class="commitment-copy">
+          <span class="team-icon" aria-hidden="true">◎</span>
+          <p>A <strong>APB</strong> conta com um <strong>corpo técnico especializado</strong> para a realização de suas atividades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
       <div class="container contact-grid">
         <div>
-          <p class="eyebrow">Entre em contato</p>
+          <p class="eyebrow light">Entre em contato</p>
           <h2>APB Projetos e Serviços de Engenharia Ltda.</h2>
           <p>África • Brasil</p>
         </div>
-        <div class="contact-card">
+        <div class="contact-links">
           <a href="tel:+5581994090020">+55 81 99409-0020</a>
           <a href="mailto:apb.eng.consultoria@gmail.com">apb.eng.consultoria@gmail.com</a>
           <span>CREA/PE 1817819100</span>
@@ -137,13 +237,17 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="./logo-apb.jpeg" alt="APB" class="footer-logo" />
-        <span>APB Projetos e Serviços de Engenharia Ltda.</span>
-      </div>
-      <span>Projetos que geram valor.</span>
+      <div class="footer-brand"><img src="./logo-apb.jpeg" alt="APB" /><span>Projetos e Serviços de Engenharia Ltda.</span></div>
+      <span>Infraestruturas que transformam realidades.</span>
     </div>
   </footer>
+
+  <dialog id="service-dialog" class="service-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+    <h2 id="dialog-title">Serviço</h2>
+    <p id="dialog-copy"></p>
+    <a class="btn-primary" href="#contato" id="dialog-contact">Fale com a APB</a>
+  </dialog>
 
   <script src="./script.js"></script>
 </body>

@@ -1,0 +1,26 @@
+ATUALIZACAO FINAL DO SITE APB
+
+Substituir no GitHub:
+- index.html
+- styles.css
+- script.js
+- logo-apb.jpeg
+- hero.jpg
+
+Manter sem alterar:
+- CNAME
+- experience.jpg
+- services.jpg
+- README.md
+
+A versao inclui:
+- nova imagem da barragem na capa;
+- logotipo sem duplicacao do nome APB;
+- nome legal com Ltda.;
+- Seguranca de Barragens;
+- Projetos em Instalacoes Eletricas e Hidraulicas;
+- Meio Ambiente;
+- Saude e Seguranca do Trabalho;
+- corpo tecnico especializado;
+- retirada dos indicadores +5 anos, +50 projetos e +20 obras;
+- cards de servicos acessiveis e interativos.
