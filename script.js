@@ -1,15 +1,12 @@
-const toggle = document.querySelector('.menu-toggle');
+const btn = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
+if (btn && nav) {
+  btn.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    toggle.textContent = open ? '✕' : '☰';
+    btn.setAttribute('aria-expanded', String(open));
   });
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     nav.classList.remove('open');
-    toggle.setAttribute('aria-expanded','false');
-    toggle.textContent = '☰';
+    btn.setAttribute('aria-expanded', 'false');
   }));
 }
-document.getElementById('year').textContent = new Date().getFullYear();

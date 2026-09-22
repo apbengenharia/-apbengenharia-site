@@ -1,0 +1,20 @@
+ATUALIZAÇÃO DO SITE APB
+
+1. No repositório GitHub, substitua os arquivos index.html, styles.css e script.js pelos desta pasta.
+2. Envie também logo-apb.jpeg para a raiz do repositório.
+3. Mantenha na raiz os arquivos já existentes hero.jpg, experience.jpg e services.jpg.
+4. Faça Commit changes.
+5. Aguarde o GitHub Pages publicar a nova versão.
+
+Principais ajustes aplicados:
+- Nome legal: APB Projetos e Serviços de Engenharia Ltda.
+- Logotipo oficial inserido.
+- "Barragem e Reservatório" com iniciais maiúsculas.
+- "Portfólio de Serviços da APB".
+- "Experiência Técnica da APB".
+- "Coordenação Técnica de Obras".
+- "Projetos em Estruturas".
+- "Instalações Elétricas e Hidráulicas".
+- "Orçamento e Planejamento".
+- Marca APB estilizada com efeito de linhas inspirado no lettering do logotipo.
+- Caminhos de imagens ajustados para arquivos na raiz do repositório.
