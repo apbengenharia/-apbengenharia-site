@@ -20,8 +20,8 @@ button{font:inherit}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-bottom:1px solid #e6eef6;backdrop-filter:blur(10px)}
 .header-inner{min-height:84px;display:flex;align-items:center;gap:26px}
-.brand{display:flex;align-items:center;gap:10px;min-width:250px}
-.brand-logo{width:66px;height:66px;border-radius:50%;object-fit:cover}
+.brand{display:flex;align-items:center;gap:10px;min-width:90px}
+.brand-logo{width:74px;height:74px;border-radius:50%;object-fit:cover}
 .brand-legal{font-weight:800;color:#0870dc;text-transform:uppercase;font-size:.78rem;line-height:1.15;letter-spacing:.01em}
 .main-nav{margin-left:auto;display:flex;align-items:center;gap:28px;font-weight:700;font-size:.94rem}
 .main-nav a{position:relative;padding:30px 0;color:#08265a}
@@ -63,16 +63,16 @@ button{font:inherit}
 .service-card{position:relative;background:#fff;border:1px solid #dbe8f4;border-radius:8px;overflow:hidden;box-shadow:0 8px 22px rgba(10,58,111,.09);transition:.22s ease;outline:none}
 .service-card:hover,.service-card:focus-within,.service-card:focus{transform:translateY(-4px);box-shadow:0 16px 32px rgba(10,58,111,.16);border-color:#a9cff3}
 .service-image{height:115px;background-size:cover;background-position:center}
-.service-dam{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./hero.jpg')}
-.service-structure{background-image:linear-gradient(135deg,#e9f3fb,#c4dff3)}
-.service-installations{background-image:linear-gradient(135deg,#d6edf9,#8ec5e9)}
-.service-coordination{background-image:linear-gradient(135deg,#cfe5f6,#8fb8d8)}
-.service-budget{background-image:linear-gradient(135deg,#edf4fa,#cbd8e6)}
-.service-environment{background-image:linear-gradient(135deg,#e8f7ec,#a8d6b4)}
-.service-hst{background-image:linear-gradient(135deg,#e6eef5,#c3d4e2)}
-.service-water{background-image:linear-gradient(135deg,#d7eff9,#8bc7e2)}
-.service-infra{background-image:linear-gradient(135deg,#e0edf7,#a4c4dd)}
-.service-consulting{background-image:linear-gradient(135deg,#eef3f8,#d1dce6)}
+.service-dam{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./02_seguranca_barragens.jpg')}
+.service-structure{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./03_projetos_estruturas.jpg')}
+.service-installations{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./04_instalacoes_eletricas_hidraulicas.jpg')}
+.service-coordination{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./05_coordenacao_tecnica_obras.jpg')}
+.service-budget{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./06_orcamento_planejamento.jpg')}
+.service-environment{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./07_meio_ambiente.jpg')}
+.service-hst{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./08_saude_seguranca_trabalho.jpg')}
+.service-water{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./09_saneamento_infraestrutura.jpg')}
+.service-infra{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./10_estudos_projetos_infraestrutura.jpg')}
+.service-consulting{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./11_consultoria_tecnica.jpg')}
 .service-body{position:relative;padding:18px 16px 52px;min-height:230px}
 .service-icon{width:32px;height:32px;fill:none;stroke:#0879ed;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;float:left;margin:0 12px 6px 0}
 .service-card h3{font-size:.98rem;line-height:1.2;margin:0 0 14px;color:#0a2d66;min-height:38px}
@@ -91,7 +91,7 @@ button{font:inherit}
 .experience-inner{max-width:550px;margin-left:auto;padding:62px 44px 54px 30px}
 .experience-inner h2{font-size:2.6rem;line-height:1.05;margin:0 0 18px}
 .experience-inner p{color:#eef7ff}
-.experience-photo{background-image:linear-gradient(rgba(3,45,91,.08),rgba(3,45,91,.08)),url('./experience.jpg');background-size:cover;background-position:center}
+.experience-photo{background-image:linear-gradient(rgba(3,45,91,.08),rgba(3,45,91,.08)),url('./12_equipe_apb_coletes.jpg');background-size:cover;background-position:center}
 .experience-tag{position:absolute;right:3%;top:28px;background:rgba(6,45,99,.88);border-left:3px solid var(--cyan);padding:20px 26px;z-index:3;text-transform:uppercase;font-weight:700;font-size:.8rem;line-height:1.45}
 
 .commitment-section{background:linear-gradient(180deg,#f8fcff,#e9f6ff);padding:36px 0}
