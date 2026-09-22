@@ -18,11 +18,11 @@ a{text-decoration:none;color:inherit}
 button{font:inherit}
 .container{width:94%;max-width:1540px;margin:auto}
 
-.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-bottom:1px solid #e6eef6;backdrop-filter:blur(10px)}
-.header-inner{min-height:104px;display:flex;align-items:center;gap:28px}
-.brand{display:flex;align-items:center;gap:14px;min-width:330px}
-.brand-logo{width:94px;height:94px;border-radius:50%;object-fit:cover;flex:0 0 auto}
-.brand-legal{font-weight:800;color:#0870dc;text-transform:none;font-size:1rem;line-height:1.18;letter-spacing:.01em}
+.site-header{position:sticky;top:0;z-index:50;overflow:visible;background:rgba(255,255,255,.98);border-bottom:1px solid #e6eef6;backdrop-filter:blur(10px)}
+.header-inner{min-height:108px;display:flex;align-items:center;gap:28px;overflow:visible}
+.brand{display:flex;align-items:center;gap:14px;min-width:355px;position:relative;z-index:60;overflow:visible}
+.brand-logo{width:124px;height:124px;border-radius:50%;object-fit:cover;flex:0 0 auto;transform:translateY(16px);box-shadow:0 5px 16px rgba(5,54,112,.16);background:#fff}
+.brand-legal{font-weight:800;color:#0870dc;text-transform:none;font-size:1rem;line-height:1.18;letter-spacing:.01em;white-space:nowrap}
 .main-nav{margin-left:auto;display:flex;align-items:center;gap:28px;font-weight:700;font-size:.94rem}
 .main-nav a{position:relative;padding:30px 0;color:#08265a}
 .main-nav a::after{content:"";position:absolute;left:0;right:0;bottom:16px;height:3px;background:transparent;border-radius:3px}
@@ -112,7 +112,7 @@ button{font:inherit}
 .site-footer{background:#031e43;color:#d5e8f9;padding:22px 0}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:.88rem}
 .footer-brand{display:flex;align-items:center;gap:10px;font-weight:700}
-.footer-brand img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.footer-brand img{width:66px;height:66px;border-radius:50%;object-fit:cover;flex:0 0 auto}
 
 .service-dialog{max-width:560px;width:calc(100% - 32px);border:0;border-radius:16px;padding:34px;box-shadow:0 24px 80px rgba(0,29,67,.28);color:#0b2b5f}
 .service-dialog::backdrop{background:rgba(2,24,51,.62)}
@@ -161,4 +161,29 @@ button{font:inherit}
   .project-points{grid-template-columns:1fr}
   .experience-inner h2{font-size:2.1rem}
   .experience-tag{position:static;background:#062f69;border-left:0;border-top:3px solid var(--cyan)}
+}
+
+.installations-title{clear:both;text-align:center;min-height:58px;display:flex;align-items:center;justify-content:center;margin-top:0!important;}
+
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:80;display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;font-weight:800;box-shadow:0 12px 28px rgba(0,0,0,.22);transition:transform .2s ease,box-shadow .2s ease}
+.whatsapp-float:hover,.whatsapp-float:focus{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.28);outline:none}
+.whatsapp-float svg{width:28px;height:28px;fill:currentColor;flex:0 0 auto}
+.whatsapp-float span{white-space:nowrap}
+
+@media (max-width:1100px){
+  .brand{min-width:300px}
+  .brand-logo{width:108px;height:108px;transform:translateY(14px)}
+}
+@media (max-width:860px){
+  .site-header{overflow:visible}
+  .header-inner{min-height:82px}
+  .brand-logo{width:86px;height:86px;transform:translateY(9px)}
+  .brand-legal{font-size:.78rem;white-space:normal}
+  .whatsapp-float{right:16px;bottom:16px;padding:11px 13px}
+}
+@media (max-width:560px){
+  .brand-logo{width:78px;height:78px;transform:translateY(8px)}
+  .brand-legal{font-size:.68rem}
+  .whatsapp-float span{display:none}
+  .whatsapp-float{width:54px;height:54px;padding:0;justify-content:center}
 }

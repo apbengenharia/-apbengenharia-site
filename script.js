@@ -1,62 +1,48 @@
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
+(() => {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#main-nav');
 
-if (menuButton && nav) {
-  menuButton.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(open));
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+  }
+
+  const dialog = document.querySelector('#service-dialog');
+  const dialogTitle = document.querySelector('#dialog-title');
+  const dialogCopy = document.querySelector('#dialog-copy');
+  const close = document.querySelector('.dialog-close');
+
+  const details = {
+    'Segurança de Barragens': 'Inspeções, auditorias, planos de segurança, avaliação documental e acompanhamento técnico de estruturas hidráulicas.',
+    'Projetos em Estruturas': 'Concepção, dimensionamento, detalhamento, revisão e compatibilização de estruturas.',
+    'Projetos em Instalações Elétricas e Hidráulicas': 'Projetos prediais e industriais de sistemas elétricos e hidráulicos, captação, tratamento, reserva e distribuição de água.',
+    'Coordenação Técnica de Obras': 'Supervisão, fiscalização, gestão de interfaces e apoio técnico à execução de obras.',
+    'Orçamento e Planejamento': 'Estimativas, quantitativos, medições e planejamento físico-financeiro de projetos e obras.',
+    'Meio Ambiente': 'Estudos ambientais, planos de gestão, licenciamento, monitoramento e acompanhamento socioambiental.',
+    'Saúde e Segurança do Trabalho': 'PSS, PGR, inspeções, auditorias, treinamentos, gestão de riscos e conformidade legal.',
+    'Saneamento e Infraestruturas Hidráulicas': 'Sistemas de abastecimento de água, adutoras, redes, reservatórios, drenagem e esgotamento.',
+    'Estudos e Projetos de Infraestrutura': 'Estudos de campo, vias de acesso, drenagem, urbanização, topografia e obras complementares.',
+    'Consultoria Técnica': 'Pareceres, análise técnica, due diligence, apoio contratual e revisão de documentos.'
+  };
+
+  document.querySelectorAll('.service-more').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (!dialog) return;
+      const service = button.dataset.service || 'Serviço';
+      if (dialogTitle) dialogTitle.textContent = service;
+      if (dialogCopy) dialogCopy.textContent = details[service] || 'Entre em contato com a APB para mais informações.';
+      if (typeof dialog.showModal === 'function') dialog.showModal();
+    });
   });
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuButton.setAttribute('aria-expanded', 'false');
-  }));
-}
 
-const dialog = document.getElementById('service-dialog');
-const dialogTitle = document.getElementById('dialog-title');
-const dialogCopy = document.getElementById('dialog-copy');
-const closeButton = document.querySelector('.dialog-close');
-const contactButton = document.getElementById('dialog-contact');
-
-const details = {
-  'Segurança de Barragens': 'Apoio técnico em inspeções, auditorias, documentação de segurança, acompanhamento de estruturas hidráulicas e análise das condições de operação e manutenção.',
-  'Projetos em Estruturas': 'Projetos, revisão, dimensionamento, detalhamento e compatibilização de estruturas de concreto, aço e soluções especiais.',
-  'Projetos em Instalações Elétricas e Hidráulicas': 'Desenvolvimento e compatibilização de instalações prediais e industriais, sistemas hidráulicos, elétricos e de apoio às infraestruturas.',
-  'Coordenação Técnica de Obras': 'Coordenação, fiscalização, supervisão, gestão de interfaces, qualidade, prazo e apoio técnico à execução.',
-  'Orçamento e Planejamento': 'Quantitativos, estimativas, medições, custos, cronogramas e acompanhamento físico-financeiro de projetos e obras.',
-  'Meio Ambiente': 'Estudos, planos de gestão, resíduos, efluentes, monitoramento, mitigação, licenciamento e acompanhamento socioambiental.',
-  'Saúde e Segurança do Trabalho': 'PSS, PGR, inspeções, auditorias, treinamentos, procedimentos, avaliação de riscos e resposta a emergências.',
-  'Saneamento e Infraestruturas Hidráulicas': 'Abastecimento de água, adutoras, redes, reservatórios, drenagem, esgotamento, estações e infraestruturas associadas.',
-  'Estudos e Projetos de Infraestrutura': 'Levantamentos, topografia, vias, drenagem, urbanização, estudos de campo, projeto e compatibilização.',
-  'Consultoria Técnica': 'Pareceres, análise técnica, revisão de documentos, due diligence, apoio contratual e soluções de engenharia sob medida.'
-};
-
-function openService(name) {
-  if (!dialog || !dialogTitle || !dialogCopy) return;
-  dialogTitle.textContent = name;
-  dialogCopy.textContent = details[name] || '';
-  if (typeof dialog.showModal === 'function') dialog.showModal();
-}
-
-document.querySelectorAll('.service-more').forEach(btn => {
-  btn.addEventListener('click', () => openService(btn.dataset.service));
-});
-
-document.querySelectorAll('.service-card').forEach(card => {
-  card.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      const btn = card.querySelector('.service-more');
-      if (btn) {
-        e.preventDefault();
-        openService(btn.dataset.service);
-      }
-    }
+  if (close && dialog) close.addEventListener('click', () => dialog.close());
+  if (dialog) dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
   });
-});
-
-if (closeButton && dialog) closeButton.addEventListener('click', () => dialog.close());
-if (contactButton && dialog) contactButton.addEventListener('click', () => dialog.close());
-if (dialog) dialog.addEventListener('click', e => {
-  const box = dialog.getBoundingClientRect();
-  if (e.clientX < box.left || e.clientX > box.right || e.clientY < box.top || e.clientY > box.bottom) dialog.close();
-});
+})();
