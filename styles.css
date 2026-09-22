@@ -16,13 +16,13 @@ body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);back
 img{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
 button{font:inherit}
-.container{width:min(1220px,calc(100% - 40px));margin:auto}
+.container{width:94%;max-width:1540px;margin:auto}
 
 .site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-bottom:1px solid #e6eef6;backdrop-filter:blur(10px)}
-.header-inner{min-height:96px;display:flex;align-items:center;gap:26px}
-.brand{display:flex;align-items:center;gap:12px;min-width:285px}
-.brand-logo{width:86px;height:86px;border-radius:50%;object-fit:cover;flex:0 0 auto}
-.brand-legal{font-weight:800;color:#0870dc;text-transform:uppercase;font-size:.78rem;line-height:1.15;letter-spacing:.01em}
+.header-inner{min-height:104px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:14px;min-width:330px}
+.brand-logo{width:94px;height:94px;border-radius:50%;object-fit:cover;flex:0 0 auto}
+.brand-legal{font-weight:800;color:#0870dc;text-transform:none;font-size:1rem;line-height:1.18;letter-spacing:.01em}
 .main-nav{margin-left:auto;display:flex;align-items:center;gap:28px;font-weight:700;font-size:.94rem}
 .main-nav a{position:relative;padding:30px 0;color:#08265a}
 .main-nav a::after{content:"";position:absolute;left:0;right:0;bottom:16px;height:3px;background:transparent;border-radius:3px}
@@ -30,11 +30,11 @@ button{font:inherit}
 .header-cta{display:inline-flex;gap:9px;align-items:center;background:var(--blue);color:#fff;padding:14px 18px;border-radius:7px;font-weight:800;box-shadow:0 8px 18px rgba(8,118,232,.22)}
 .menu-toggle{display:none;margin-left:auto;border:0;background:transparent;color:var(--navy);font-size:1.8rem}
 
-.hero{position:relative;min-height:595px;display:flex;align-items:center;overflow:hidden;background:#174b77;color:#fff}
+.hero{position:relative;min-height:570px;display:flex;align-items:center;overflow:hidden;background:#174b77;color:#fff}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,40,83,.83) 0%,rgba(7,52,103,.55) 43%,rgba(7,52,103,.15) 72%,rgba(7,52,103,.34) 100%)}
-.hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:1fr 330px;gap:72px;align-items:center;padding:70px 0 90px}
-.hero-copy{max-width:650px}
+.hero-overlay{display:none}
+.hero-layout{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.2fr) 330px;gap:70px;align-items:center;padding:72px 0 88px}
+.hero-copy{max-width:700px;text-shadow:0 2px 10px rgba(0,30,65,.38)}
 .eyebrow{text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--blue);font-size:.82rem;margin:0 0 14px}
 .eyebrow.light{color:#dff6ff}
 .hero-copy h1{font-size:clamp(2.7rem,5.2vw,4.7rem);line-height:.98;margin:0 0 22px;text-transform:uppercase;letter-spacing:-.025em}
@@ -54,26 +54,26 @@ button{font:inherit}
 .about-panel{background:linear-gradient(145deg,#f2f8fd,#e8f4fc);padding:34px;border-left:5px solid var(--cyan);border-radius:16px;box-shadow:var(--shadow)}
 .about-panel h3{margin-top:0;font-size:1.45rem}
 
-.services-section{padding-top:58px;background:#fff}
-.section-heading{text-align:center;margin-bottom:28px}
+.services-section{padding:54px 0 64px;background:#fff}
+.section-heading{text-align:center;margin-bottom:32px}
 .section-heading h2{font-size:2.3rem;text-transform:uppercase;margin:0;color:#092d66}
 .section-heading h2::after{content:"";display:block;width:64px;height:3px;background:var(--blue);margin:10px auto 8px}
 .section-heading p{margin:0;color:#244975;font-size:1.05rem}
-.services-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.services-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;width:100%}
 .service-card{position:relative;background:#fff;border:1px solid #dbe8f4;border-radius:8px;overflow:hidden;box-shadow:0 8px 22px rgba(10,58,111,.09);transition:.22s ease;outline:none}
 .service-card:hover,.service-card:focus-within,.service-card:focus{transform:translateY(-4px);box-shadow:0 16px 32px rgba(10,58,111,.16);border-color:#a9cff3}
-.service-image{height:115px;background-size:cover;background-position:center}
-.service-dam{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./02_seguranca_barragens.jpg')}
-.service-structure{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./03_projetos_estruturas.jpg')}
-.service-installations{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./04_instalacoes_eletricas_hidraulicas.jpg')}
-.service-coordination{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./05_coordenacao_tecnica_obras.jpg')}
-.service-budget{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./06_orcamento_planejamento.jpg')}
-.service-environment{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./07_meio_ambiente.jpg')}
-.service-hst{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./08_saude_seguranca_trabalho.jpg')}
-.service-water{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./09_saneamento_infraestrutura.jpg')}
-.service-infra{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./10_estudos_projetos_infraestrutura.jpg')}
-.service-consulting{background-image:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),url('./11_consultoria_tecnica.jpg')}
-.service-body{position:relative;padding:18px 16px 52px;min-height:230px}
+.service-image{height:150px;background-size:cover;background-position:center}
+.service-dam{background-image:url('./02_seguranca_barragens.jpg')}
+.service-structure{background-image:url('./03_projetos_estruturas.jpg')}
+.service-installations{background-image:url('./04_instalacoes_eletricas_hidraulicas.jpg')}
+.service-coordination{background-image:url('./05_coordenacao_tecnica_obras.jpg')}
+.service-budget{background-image:url('./06_orcamento_planejamento.jpg')}
+.service-environment{background-image:url('./07_meio_ambiente.jpg')}
+.service-hst{background-image:url('./08_saude_seguranca_trabalho.jpg')}
+.service-water{background-image:url('./09_saneamento_infraestruturas_hidricas.jpg')}
+.service-infra{background-image:url('./10_estudos_projetos_infraestrutura.jpg')}
+.service-consulting{background-image:url('./11_consultoria_tecnica.jpg')}
+.service-body{position:relative;padding:18px 16px 50px;min-height:225px}
 .service-icon{width:32px;height:32px;fill:none;stroke:#0879ed;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;float:left;margin:0 12px 6px 0}
 .service-card h3{font-size:.98rem;line-height:1.2;margin:0 0 14px;color:#0a2d66;min-height:38px}
 .service-card p{clear:both;color:#4b6380;font-size:.86rem;line-height:1.45;margin:0}
@@ -86,12 +86,12 @@ button{font:inherit}
 .project-points{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .project-points span{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);padding:18px;border-radius:8px;font-weight:700}
 
-.experience-section{position:relative;display:grid;grid-template-columns:42% 58%;min-height:390px;background:#083c78;color:#fff;overflow:hidden}
+.experience-section{position:relative;display:grid;grid-template-columns:40% 60%;min-height:470px;background:#083c78;color:#fff;overflow:hidden}
 .experience-text{background:linear-gradient(115deg,#06336f 0%,#06336f 86%,transparent 86%);position:relative;z-index:2}
-.experience-inner{max-width:550px;margin-left:auto;padding:62px 44px 54px 30px}
+.experience-inner{max-width:620px;margin-left:auto;padding:78px 48px 64px 5%}
 .experience-inner h2{font-size:2.6rem;line-height:1.05;margin:0 0 18px}
 .experience-inner p{color:#eef7ff}
-.experience-photo{background-image:linear-gradient(rgba(3,45,91,.08),rgba(3,45,91,.08)),url('./12_equipe_apb_coletes.jpg');background-size:cover;background-position:center}
+.experience-photo{background-image:url('./12_equipe_apb_coletes.jpg');background-size:cover;background-position:center 42%;min-height:470px}
 .experience-tag{position:absolute;right:3%;top:28px;background:rgba(6,45,99,.88);border-left:3px solid var(--cyan);padding:20px 26px;z-index:3;text-transform:uppercase;font-weight:700;font-size:.8rem;line-height:1.45}
 
 .commitment-section{background:linear-gradient(180deg,#f8fcff,#e9f6ff);padding:36px 0}
@@ -127,7 +127,7 @@ button{font:inherit}
 }
 @media (max-width:860px){
   .header-inner{min-height:76px}
-  .brand-logo{width:66px;height:66px}
+  .brand-logo{width:72px;height:72px}
   .brand{min-width:0}
   .header-cta{display:none}
   .menu-toggle{display:block}
@@ -147,9 +147,9 @@ button{font:inherit}
   .services-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:560px){
-  .container{width:min(100% - 24px,1220px)}
-  .brand-legal{font-size:.62rem}
-  .brand-logo{width:60px;height:60px}
+  .container{width:calc(100% - 24px);max-width:none}
+  .brand-legal{font-size:.74rem}
+  .brand-logo{width:66px;height:66px}
   .hero{min-height:620px}
   .hero-copy h1{font-size:2.55rem}
   .hero-copy>p:not(.eyebrow){font-size:1rem}
