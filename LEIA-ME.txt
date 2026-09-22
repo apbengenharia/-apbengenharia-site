@@ -1,26 +1,17 @@
-ATUALIZACAO FINAL DO SITE APB
+APB - IMAGENS DO SITE
+Design de referência: último modelo aprovado no ChatGPT
 
-Substituir no GitHub:
-- index.html
-- styles.css
-- script.js
-- logo-apb.jpeg
-- hero.jpg
-
-Manter sem alterar:
-- CNAME
-- experience.jpg
-- services.jpg
-- README.md
-
-A versao inclui:
-- nova imagem da barragem na capa;
-- logotipo sem duplicacao do nome APB;
-- nome legal com Ltda.;
-- Seguranca de Barragens;
-- Projetos em Instalacoes Eletricas e Hidraulicas;
-- Meio Ambiente;
-- Saude e Seguranca do Trabalho;
-- corpo tecnico especializado;
-- retirada dos indicadores +5 anos, +50 projetos e +20 obras;
-- cards de servicos acessiveis e interativos.
+00_logo_apb.jpg
+01_capa_barragem.jpg
+02_seguranca_barragens.jpg
+03_projetos_estruturas.jpg
+04_instalacoes_eletricas_hidraulicas.jpg
+05_coordenacao_tecnica_obras.jpg
+06_orcamento_planejamento.jpg
+07_meio_ambiente.jpg
+08_saude_seguranca_trabalho.jpg
+09_saneamento_infraestruturas_hidricas.jpg
+10_estudos_projetos_infraestrutura.jpg
+11_consultoria_tecnica.jpg
+12_equipe_apb_coletes.jpg
+referencia_design_aprovado.jpg
